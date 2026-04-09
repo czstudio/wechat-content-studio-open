@@ -9,13 +9,10 @@ This repo is designed to work well with mainstream AI coding and workflow agents
 - `opencode.md`
 - `trae.md`
 - `codebuddy.md`
-
-## Also easy to adapt
-
-- Cursor
-- Windsurf
-- Roo Code
-- Cline
+- `cursor.md`
+- `windsurf.md`
+- `cline.md`
+- `roo-code.md`
 
 ## How to use
 
