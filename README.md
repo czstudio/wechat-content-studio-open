@@ -449,6 +449,7 @@ Publish Prep
 
 ```text
 wechat-content-studio-open/
+├─ agents/
 ├─ README.md
 ├─ SKILL.md
 ├─ references/
@@ -463,6 +464,52 @@ wechat-content-studio-open/
    ├─ end-to-end-example.md
    └─ repair-loop-example.md
 ```
+
+---
+
+## 主流 AI Agent 也能直接装
+
+我已经把这套 skill 做成了适合 agent 直接读取的结构。
+
+仓库里有现成适配文档：
+
+- `agents/codex.md`
+- `agents/claude-code.md`
+- `agents/opencode.md`
+- `agents/trae.md`
+- `agents/codebuddy.md`
+
+还有一个总入口：
+
+- `agents/README.md`
+
+它们的作用不是重新发明一套逻辑，而是让不同 agent 更快接入同一套工作流。
+
+也就是说：
+
+无论你用的是 Codex、Claude Code、OpenCode、Trae、CodeBuddy，还是 Cursor / Windsurf / Roo Code 这一类工具，
+都可以把这套仓库当成：
+
+“公众号内容生产工作流插件包”
+
+来安装。
+
+---
+
+## 给 agent 的一句话安装提示
+
+如果你的 agent 支持 memory / project instruction / custom skill，直接喂它这段：
+
+```text
+Use `wechat-content-studio-open` as the default workflow for WeChat article production.
+Treat WeChat writing as:
+Topic Board -> Draft Brief -> Draft -> Proof Gate -> Repair Brief -> Image Plan -> Publish Prep.
+Do not jump straight to one-shot drafting when topic readiness or support is still weak.
+Use user-provided sample articles, style seed, and local corpus as the DNA source.
+Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs.
+```
+
+这段话是通用版，适合大部分 agent。
 
 ---
 

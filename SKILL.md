@@ -133,6 +133,7 @@ Default sequence:
 ## Resource Loading
 
 - Read `references/capability-map.md` for the high-level design.
+- Read `references/agent-install-kit.md` when adapting this package to a specific AI agent.
 - Read `references/workflow-playbook.md` for the full pipeline.
 - Read `references/topic-card-template.md` when returning topic cards.
 - Read `references/draft-brief-template.md` when moving from topic to writing.
@@ -140,6 +141,7 @@ Default sequence:
 - Read `references/dna-seed-template.md` when the user needs to define a voice.
 - Read `references/github-packaging-checklist.md` when adapting this skill for a public repo.
 - Read `examples/end-to-end-example.md` and `examples/repair-loop-example.md` for concrete output shapes.
+- Read `agents/README.md` when the user asks how to install this for Codex, Claude Code, OpenCode, Trae, CodeBuddy, or similar agents.
 
 ## Guardrails
 
