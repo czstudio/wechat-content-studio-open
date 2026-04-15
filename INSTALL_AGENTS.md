@@ -1,225 +1,167 @@
 # Install for AI Agents
 
-> 这一页专门写“不同 agent 怎么装”。
+> 这一页专门解决一个问题：
+>
+> **怎么让 OpenClaw、Codex、Claude Code 这类 agent 真正能用上这个仓库。**
 
-如果你只是第一次来这个仓库，先看这里，不用先啃完整 README。
+不是只给一段空提示词。
 
----
+而是要完成这 3 步：
 
-## 通用安装思路
-
-无论你用哪个 agent，核心都一样：
-
-1. 把这个仓库放进你的项目或技能目录
-2. 让 agent 读取 `SKILL.md`
-3. 再读取：
-   - `references/workflow-playbook.md`
-   - 对应模板
-   - `examples/`
-4. 把一段简短安装提示塞进 agent 的 memory / project instructions / custom skill 配置里
+1. 把仓库放到 agent 能读到的位置
+2. 告诉 agent 先读哪些文件
+3. 再把行为提示喂给它
 
 ---
 
-## 给所有 agent 通用的一段话
+## Step 0：先拿到仓库
 
-如果你不想区分平台，直接把下面这段复制给 agent：
+仓库地址：
 
 ```text
-Use `wechat-content-studio-open` as the default workflow for WeChat article production.
-Treat WeChat writing as:
-Topic Board -> Draft Brief -> Draft -> Proof Gate -> Repair Brief -> Image Plan -> Publish Prep.
-Do not jump straight to one-shot drafting when topic readiness or support is still weak.
-Use user-provided sample articles, style seed, and local corpus as the DNA source.
-Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs.
+https://github.com/czstudio/wechat-content-studio-open
 ```
 
-如果你想直接按不同 agent 复制现成版本：
+先 clone：
+
+```bash
+git clone https://github.com/czstudio/wechat-content-studio-open.git
+```
+
+clone 完后，你会得到一个本地目录，比如：
+
+```text
+/path/to/wechat-content-studio-open
+```
+
+或者：
+
+```text
+H:\tools\wechat-content-studio-open
+```
+
+后面所有安装动作，都是围绕这个本地目录做的。
+
+---
+
+## Step 1：让 agent 能读到仓库
+
+最少要让 agent 能访问这些文件：
+
+- `SKILL.md`
+- `references/workflow-playbook.md`
+- `examples/`
+
+如果 agent 只能读你当前项目目录，那就把仓库放进项目目录里。  
+如果 agent 支持外部 repo / workflow pack / skills path，就直接挂进去。
+
+---
+
+## Step 2：再给 agent 行为提示
+
+这一步不要自己手写。
+
+直接去：
 
 - [`COPY_PASTE_PROMPTS.md`](./COPY_PASTE_PROMPTS.md)
 
----
+复制对应 agent 的版本。
 
-## OpenClaw / Codex 极速安装
+重点不是那段提示词本身。  
+重点是里面已经包含：
 
-如果你现在就想在 OpenClaw 或 Codex 里直接用，最短路径是：
-
-1. 让 agent 读取 `SKILL.md`
-2. 再读取 `references/workflow-playbook.md`
-3. 把上面的“通用安装提示”原样贴进去
-
-如果你的 agent 支持 repo 级说明，那再补读：
-
-- `examples/end-to-end-example.md`
-- `examples/repair-loop-example.md`
-
-这已经足够开始用。
+- 本地仓库路径占位符 `{{REPO_PATH}}`
+- 先读哪些文件
+- 再按什么工作流运行
 
 ---
 
-## 不同 agent 怎么装
+## OpenClaw / Codex 最短路径
 
-### 1. OpenClaw
+如果你现在最想支持的是 OpenClaw 或 Codex，最短路径是：
 
-看这个：
+### 1. clone 仓库
 
-- [`agents/openclaw.md`](./agents/openclaw.md)
+```bash
+git clone https://github.com/czstudio/wechat-content-studio-open.git
+```
 
-适合放在：
+### 2. 记住本地路径
 
-- skill layer
-- project instruction layer
-- repo attached workflow pack
+例如：
 
----
+```text
+/Users/you/tools/wechat-content-studio-open
+```
 
-### 2. Codex / Codex CLI
+### 3. 打开这个文件
 
-看这个：
+- [`COPY_PASTE_PROMPTS.md`](./COPY_PASTE_PROMPTS.md)
 
-- [`agents/codex.md`](./agents/codex.md)
+### 4. 找到对应段落
 
-适合放在：
+- `OpenClaw`
+- `Codex / Codex CLI`
 
-- project instructions
-- skill memory
-- workspace-level instructions
+### 5. 把里面的 `{{REPO_PATH}}` 替换成真实路径
 
----
+### 6. 再贴进 agent 配置
 
-### 3. Claude Code
-
-看这个：
-
-- [`agents/claude-code.md`](./agents/claude-code.md)
-
-适合放在：
-
-- Claude Code project memory
-- repo-level working instructions
+这就是真正能跑起来的安装方式。
 
 ---
 
-### 4. OpenCode
+## 不同 agent 入口
 
-看这个：
+### OpenClaw
 
-- [`agents/opencode.md`](./agents/opencode.md)
+- 安装说明：[`agents/openclaw.md`](./agents/openclaw.md)
 
-适合放在：
+### Codex / Codex CLI
 
-- custom workflow instructions
-- project guidance
+- 安装说明：[`agents/codex.md`](./agents/codex.md)
 
----
+### Claude Code
 
-### 5. Trae
+- 安装说明：[`agents/claude-code.md`](./agents/claude-code.md)
 
-看这个：
+### OpenCode
 
-- [`agents/trae.md`](./agents/trae.md)
+- 安装说明：[`agents/opencode.md`](./agents/opencode.md)
 
-适合放在：
+### Trae
 
-- workspace prompt
-- project assistant config
+- 安装说明：[`agents/trae.md`](./agents/trae.md)
 
----
+### CodeBuddy
 
-### 6. CodeBuddy
+- 安装说明：[`agents/codebuddy.md`](./agents/codebuddy.md)
 
-看这个：
-
-- [`agents/codebuddy.md`](./agents/codebuddy.md)
-
-适合放在：
-
-- skill pack
-- custom repo instructions
-
----
-
-### 7. 其他常见 agent
-
-- Cursor
-- Windsurf
-- Roo Code
-- Cline
-
-对应适配页：
+### Cursor / Windsurf / Cline / Roo Code
 
 - [`agents/cursor.md`](./agents/cursor.md)
 - [`agents/windsurf.md`](./agents/windsurf.md)
-- [`agents/roo-code.md`](./agents/roo-code.md)
 - [`agents/cline.md`](./agents/cline.md)
+- [`agents/roo-code.md`](./agents/roo-code.md)
 
 ---
 
-## 最短安装路径
-
-如果你只想 30 秒装好：
-
-### Step 1
-
-让 agent 读取：
-
-- [`SKILL.md`](./SKILL.md)
-
-### Step 2
-
-再读取：
-
-- [`references/workflow-playbook.md`](./references/workflow-playbook.md)
-
-### Step 3
-
-复制上面的“通用安装提示”给它
-
-就够开始用了。
-
----
-
-## 建议 agent 的默认行为
-
-安装后，最好让 agent 默认遵守这几个规则：
-
-1. 选题不清楚时，不要直接整篇开写，先做 `Topic Board`
-2. winner 明确后，不要直接 freestyle，先出 `Draft Brief`
-3. 用户有初稿时，不要空泛点评，先跑 `Proof Gate`
-4. 稿子能救时，不要只说“再润一下”，要给 `Repair Brief`
-5. 用户只说“继续”时，默认推进到最近未完成阶段
-
----
-
-## 推荐给 agent 读的文件顺序
+## 推荐的 agent 读取顺序
 
 | 顺序 | 文件 |
 |---|---|
-| 1 | [`SKILL.md`](./SKILL.md) |
-| 2 | [`references/agent-install-kit.md`](./references/agent-install-kit.md) |
-| 3 | [`references/workflow-playbook.md`](./references/workflow-playbook.md) |
+| 1 | `SKILL.md` |
+| 2 | `references/agent-install-kit.md` |
+| 3 | `references/workflow-playbook.md` |
 | 4 | 对应模板文件 |
-| 5 | [`examples/`](./examples/) |
-
----
-
-## 如果你想自己扩展 agent 适配
-
-看这里：
-
-- [`references/agent-install-kit.md`](./references/agent-install-kit.md)
-
-核心原则很简单：
-
-- 不要为每个 agent 重写一套工作流
-- 保持一个共享核心
-- 只做薄适配层
+| 5 | `examples/` |
 
 ---
 
 ## 一句话总结
 
-这个仓库最适合的安装方式不是“复制一段 prompt”。
+真正能装成功，不是“复制一句 Use xxx as default workflow”。
 
 而是：
 
-把它当成一个可挂载到主流 AI agent 上的“公众号内容生产工作流包”。
+**先把仓库挂进 agent 能读的路径，再把带本地路径的提示词喂给它。**

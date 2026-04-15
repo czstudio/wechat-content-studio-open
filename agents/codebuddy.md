@@ -1,26 +1,23 @@
 # CodeBuddy Adapter
 
-Use this package when CodeBuddy is helping with content-heavy WeChat workflows.
+CodeBuddy ?? agent ???????????????????????
 
-It is especially useful when the task needs:
+?????
 
-- structured idea generation
-- article workflow decomposition
-- quality review before publish
-- handoff-ready repair instructions
+1. `../SKILL.md`
+2. `../references/workflow-playbook.md`
+3. ??????
+4. `../examples/`
 
-Core reading order:
+?????
 
-1. `SKILL.md`
-2. `references/workflow-playbook.md`
-3. the correct template file
-4. `examples/`
+- ?? [`../INSTALL_AGENTS.md`](../INSTALL_AGENTS.md)
+- ??? [`../COPY_PASTE_PROMPTS.md`](../COPY_PASTE_PROMPTS.md) ?? `OpenCode / Trae / CodeBuddy` ??
+- ? `{{REPO_PATH}}` ?????????
 
-Copy-paste install snippet:
+?????
 
-```markdown
-Use `wechat-content-studio-open` for WeChat writing and review tasks.
-Do not stop at title ideas or first draft generation.
-Prefer structured outputs such as Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs.
-Use user-provided articles and notes as the style and material source.
-```
+- `Topic Card`
+- `Draft Brief`
+- `Support Matrix`
+- `Repair Brief`
