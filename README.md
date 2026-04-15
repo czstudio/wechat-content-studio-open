@@ -108,6 +108,10 @@ Publish Prep
 
 -> [`COPY_PASTE_PROMPTS.md`](./COPY_PASTE_PROMPTS.md)
 
+如果你还要让 agent 真的配图、生图，而不是只会输出 `Image Plan`：
+
+-> [`references/image-api-setup.md`](./references/image-api-setup.md)
+
 ---
 
 ## 仓库结构
@@ -142,6 +146,7 @@ wechat-content-studio-open/
 - Topic Card 模板：[`references/topic-card-template.md`](./references/topic-card-template.md)
 - Draft Brief 模板：[`references/draft-brief-template.md`](./references/draft-brief-template.md)
 - Repair Brief 模板：[`references/repair-brief-template.md`](./references/repair-brief-template.md)
+- 生图 API 接入：[`references/image-api-setup.md`](./references/image-api-setup.md)
 
 <details>
 <summary>这个项目适合谁</summary>

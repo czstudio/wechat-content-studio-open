@@ -71,6 +71,9 @@ Do not jump straight to one-shot drafting when topic readiness, support, or stru
 Use user-provided sample articles, style seed, and local corpus as the writing DNA source.
 Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs.
 If the user only says "continue", advance from the nearest unfinished stage.
+
+When the task includes real image generation, first check image API configuration.
+If keys are missing, stop at Image Plan and ask for provider setup.
 ```
 
 ---
@@ -99,6 +102,9 @@ Do not jump directly to full-article generation when topic readiness, support, o
 Use user-provided sample articles, style seed, and local corpus as the writing DNA source.
 Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs.
 If the user only says "continue", continue from the nearest unfinished stage.
+
+For real image generation, first read {{REPO_PATH}}/references/image-api-setup.md.
+If image API keys are missing, stop at Image Plan and ask for provider setup.
 ```
 
 ---
@@ -129,6 +135,9 @@ Use user-provided sample articles, style seed, and local corpus as the DNA sourc
 If the user has only an idea, return Topic Board first.
 If the user has a draft, run Proof Gate first.
 If the draft is weak but repairable, return Repair Brief instead of generic rewrite advice.
+
+If the task includes WeChat illustrations, first read {{REPO_PATH}}/references/image-api-setup.md.
+If no image API keys exist, do not fake image generation.
 ```
 
 ---
@@ -150,6 +159,9 @@ Topic Board -> Draft Brief -> Draft -> Proof Gate -> Repair Brief -> Image Plan 
 Use the user's sample articles, manual style seed, and local corpus to infer writing DNA.
 Prefer concrete artifacts such as Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs.
 When the user only says "continue", advance from the nearest unfinished stage.
+
+For real image generation, first read {{REPO_PATH}}/references/image-api-setup.md.
+If image keys are missing, stop at Image Plan.
 ```
 
 ---
@@ -170,6 +182,8 @@ Topic Board -> Draft Brief -> Draft -> Proof Gate -> Repair Brief.
 Use sample articles, style seed, and local notes as the writing DNA source.
 Return explicit workflow artifacts instead of generic advice.
 If the user has a draft, review before rewriting.
+
+If the task includes real images, first check {{REPO_PATH}}/references/image-api-setup.md.
 ```
 
 ---
@@ -190,6 +204,8 @@ Topic Board -> Draft Brief -> Draft -> Proof Gate -> Repair Brief -> Image Plan 
 
 Use the user's sample articles, style seed, and local corpus as the writing DNA source.
 Prefer Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs as explicit outputs.
+
+If image API keys are missing, stop at Image Plan and ask for setup instead of pretending to generate images.
 ```
 
 ---

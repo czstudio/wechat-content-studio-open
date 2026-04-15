@@ -74,6 +74,12 @@ H:\tools\wechat-content-studio-open
 - 先读哪些文件
 - 再按什么工作流运行
 
+如果你希望 agent 不只是输出 `Image Plan`，而是真的帮你生成公众号封面和正文插图，继续看：
+
+- [`references/image-api-setup.md`](./references/image-api-setup.md)
+
+因为公开仓库不会自带任何私有图像 API key。
+
 ---
 
 ## OpenClaw / Codex 最短路径
@@ -165,3 +171,5 @@ git clone https://github.com/czstudio/wechat-content-studio-open.git
 而是：
 
 **先把仓库挂进 agent 能读的路径，再把带本地路径的提示词喂给它。**
+
+如果还要让它真的生图，记得再补 `image API setup`。
