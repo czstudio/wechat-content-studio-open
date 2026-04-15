@@ -35,9 +35,40 @@ Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and
 
 ---
 
+## OpenClaw / Codex 极速安装
+
+如果你现在就想在 OpenClaw 或 Codex 里直接用，最短路径是：
+
+1. 让 agent 读取 `SKILL.md`
+2. 再读取 `references/workflow-playbook.md`
+3. 把上面的“通用安装提示”原样贴进去
+
+如果你的 agent 支持 repo 级说明，那再补读：
+
+- `examples/end-to-end-example.md`
+- `examples/repair-loop-example.md`
+
+这已经足够开始用。
+
+---
+
 ## 不同 agent 怎么装
 
-### 1. Codex / Codex CLI
+### 1. OpenClaw
+
+看这个：
+
+- [`agents/openclaw.md`](./agents/openclaw.md)
+
+适合放在：
+
+- skill layer
+- project instruction layer
+- repo attached workflow pack
+
+---
+
+### 2. Codex / Codex CLI
 
 看这个：
 
@@ -51,7 +82,7 @@ Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and
 
 ---
 
-### 2. Claude Code
+### 3. Claude Code
 
 看这个：
 
@@ -64,7 +95,7 @@ Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and
 
 ---
 
-### 3. OpenCode
+### 4. OpenCode
 
 看这个：
 
@@ -77,7 +108,7 @@ Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and
 
 ---
 
-### 4. Trae
+### 5. Trae
 
 看这个：
 
@@ -90,7 +121,7 @@ Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and
 
 ---
 
-### 5. CodeBuddy
+### 6. CodeBuddy
 
 看这个：
 
@@ -103,7 +134,7 @@ Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and
 
 ---
 
-### 6. 其他常见 agent
+### 7. 其他常见 agent
 
 - Cursor
 - Windsurf

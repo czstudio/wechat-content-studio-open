@@ -93,6 +93,7 @@ Publish Prep
 
 这个仓库已经给主流 agent 准备了适配入口：
 
+- OpenClaw
 - Codex / Codex CLI
 - Claude Code
 - OpenCode

@@ -4,6 +4,7 @@ This repo is designed to work well with mainstream AI coding and workflow agents
 
 ## Included adapters
 
+- `openclaw.md`
 - `codex.md`
 - `claude-code.md`
 - `opencode.md`
