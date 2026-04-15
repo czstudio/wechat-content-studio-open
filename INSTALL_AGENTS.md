@@ -33,6 +33,10 @@ Use user-provided sample articles, style seed, and local corpus as the DNA sourc
 Prefer explicit artifacts such as Topic Cards, Draft Briefs, Support Matrix, and Repair Briefs.
 ```
 
+如果你想直接按不同 agent 复制现成版本：
+
+- [`COPY_PASTE_PROMPTS.md`](./COPY_PASTE_PROMPTS.md)
+
 ---
 
 ## OpenClaw / Codex 极速安装

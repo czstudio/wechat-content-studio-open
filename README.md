@@ -104,6 +104,10 @@ Publish Prep
 
 -> [`INSTALL_AGENTS.md`](./INSTALL_AGENTS.md)
 
+如果你只想复制一段提示词直接装：
+
+-> [`COPY_PASTE_PROMPTS.md`](./COPY_PASTE_PROMPTS.md)
+
 ---
 
 ## 仓库结构
@@ -112,6 +116,7 @@ Publish Prep
 wechat-content-studio-open/
 ├─ README.md
 ├─ INSTALL_AGENTS.md
+├─ COPY_PASTE_PROMPTS.md
 ├─ SKILL.md
 ├─ agents/
 ├─ references/
