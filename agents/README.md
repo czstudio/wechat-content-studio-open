@@ -14,6 +14,7 @@ This repo is designed to work well with mainstream AI coding and workflow agents
 - `windsurf.md`
 - `cline.md`
 - `roo-code.md`
+- `agentalpha-wechat.md`
 
 ## How to use
 
@@ -23,6 +24,7 @@ This repo is designed to work well with mainstream AI coding and workflow agents
    - `SKILL.md`
    - `references/`
    - `examples/`
+   - `profiles/`（如使用 AgentAlpha 预设）
 
 ## Why this works well for agents
 

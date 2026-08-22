@@ -218,6 +218,27 @@ If image API keys are missing, stop at Image Plan and ask for setup instead of p
 2. 找到本地路径
 3. 把上面对应 agent 的提示词里 `{{REPO_PATH}}` 替换掉
 4. 粘贴进 agent 配置
+
+## AgentAlpha preset
+
+Use the AgentAlpha profile under `{{REPO_PATH}}/profiles/agentalpha-wechat-production`.
+
+Read first:
+
+1. `{{REPO_PATH}}/profiles/agentalpha-wechat-production/SKILL.md`
+2. `{{REPO_PATH}}/profiles/agentalpha-wechat-production/README.md`
+3. `{{REPO_PATH}}/profiles/agentalpha-wechat-production/production-contract.md`
+4. `{{REPO_PATH}}/profiles/agentalpha-wechat-production/publish-contract.md`
+5. `{{REPO_PATH}}/profiles/agentalpha-wechat-production/templates/cta-templates.md`
+
+Hard rules:
+
+- User-provided full copy is read-only.
+- Long technical articles use 8–10 illustrations; full technical interview articles default to 10.
+- Show every generated image for user acceptance before upload.
+- Save to the WeChat draft box only; never publicly publish without a separate explicit request.
+- Prove success with a real `appmsgid` / `media_id` and forced remote readback.
+- Reuse an already logged-in Chrome profile without repeated QR scans; stop on login or browser-control failure.
 5. 开始用
 
 ---

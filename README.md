@@ -112,6 +112,18 @@ Publish Prep
 
 -> [`references/image-api-setup.md`](./references/image-api-setup.md)
 
+## AgentAlpha preset
+
+如果你要运行 AgentAlpha 的“锁稿 -> 排版 -> 8–10 张手绘技术图 -> 用户验收 -> 公众号草稿回读”流程，先读取：
+
+- [`profiles/agentalpha-wechat-production/SKILL.md`](./profiles/agentalpha-wechat-production/SKILL.md)
+- [`profiles/agentalpha-wechat-production/README.md`](./profiles/agentalpha-wechat-production/README.md)
+- [`profiles/agentalpha-wechat-production/production-contract.md`](./profiles/agentalpha-wechat-production/production-contract.md)
+- [`profiles/agentalpha-wechat-production/publish-contract.md`](./profiles/agentalpha-wechat-production/publish-contract.md)
+- [`profiles/agentalpha-wechat-production/templates/cta-templates.md`](./profiles/agentalpha-wechat-production/templates/cta-templates.md)
+
+这个预设保留用户原稿、默认完整技术文章 10 张图、要求逐张验收，并且只写入公众号草稿箱。
+
 ---
 
 ## 仓库结构
@@ -123,6 +135,7 @@ wechat-content-studio-open/
 ├─ COPY_PASTE_PROMPTS.md
 ├─ SKILL.md
 ├─ agents/
+├─ profiles/
 ├─ references/
 └─ examples/
 ```
@@ -135,6 +148,7 @@ wechat-content-studio-open/
 2. [`SKILL.md`](./SKILL.md)
 3. [`references/workflow-playbook.md`](./references/workflow-playbook.md)
 4. [`examples/end-to-end-example.md`](./examples/end-to-end-example.md)
+5. [`profiles/agentalpha-wechat-production/SKILL.md`](./profiles/agentalpha-wechat-production/SKILL.md)（需要 AgentAlpha 公众号生产流程时）
 
 ---
 

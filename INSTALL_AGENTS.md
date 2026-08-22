@@ -80,6 +80,18 @@ H:\tools\wechat-content-studio-open
 
 因为公开仓库不会自带任何私有图像 API key。
 
+## AgentAlpha 公众号预设
+
+如果你要复用 AgentAlpha 的固定生产要求，额外让 agent 读取：
+
+- [`profiles/agentalpha-wechat-production/SKILL.md`](./profiles/agentalpha-wechat-production/SKILL.md)
+- [`profiles/agentalpha-wechat-production/README.md`](./profiles/agentalpha-wechat-production/README.md)
+- [`profiles/agentalpha-wechat-production/production-contract.md`](./profiles/agentalpha-wechat-production/production-contract.md)
+- [`profiles/agentalpha-wechat-production/publish-contract.md`](./profiles/agentalpha-wechat-production/publish-contract.md)
+- [`profiles/agentalpha-wechat-production/templates/cta-templates.md`](./profiles/agentalpha-wechat-production/templates/cta-templates.md)
+
+该预设的关键门禁是：用户原稿只读、完整技术文章默认 10 张手绘技术图、全部图片先验收、公众号只存草稿、并用真实 `appmsgid` / `media_id` 和远端回读证明保存成功。
+
 ---
 
 ## OpenClaw / Codex 最短路径
@@ -142,6 +154,10 @@ git clone https://github.com/czstudio/wechat-content-studio-open.git
 ### CodeBuddy
 
 - 安装说明：[`agents/codebuddy.md`](./agents/codebuddy.md)
+
+### AgentAlpha WeChat
+
+- 安装说明：[`agents/agentalpha-wechat.md`](./agents/agentalpha-wechat.md)
 
 ### Cursor / Windsurf / Cline / Roo Code
 

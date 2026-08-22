@@ -1,0 +1,31 @@
+---
+name: agentalpha-wechat-production
+description: AgentAlpha 公众号文章的锁稿、手绘技术配图、用户验收与草稿箱发布流程。
+---
+
+# AgentAlpha WeChat Production
+
+这是一个可跨 Agent 使用的生产预设。用户给出新文案时，按“锁稿 -> 排版 -> 配图 -> 用户验收 -> 草稿箱回读”执行。
+
+先读取本目录：
+
+1. `README.md`
+2. `production-contract.md`
+3. `visual-reference-manifest.md`
+4. `character-reference.md`
+5. `templates/cta-templates.md`
+6. `publish-contract.md`
+
+硬规则：
+
+- 用户提供的完整正文是只读底稿；排版、配图、发布流程不得擅自改写正文。
+- 长技术文章默认 8–10 张图；完整 Agent / Agentic RL 面试文章默认 10 张：封面、架构图、机制图、案例图、总结/CTA 图。
+- 配图必须服务于段落结论，默认 1280×720 的暖象牙纸张、黑色手绘线稿、克制配色和动态关系；不是抽象装饰海报。
+- 每次生图最多使用 1 张构图参考图，人物参考最多再加 1 张；只学习构图、线条、颜色和动作，禁止复制外部人物、Logo、文字或水印。
+- 默认无人；需要人物时仅使用 AgentAlpha 技术讲解者作为辅助动作，最多每 3–5 张出现 1 张、占画面不超过 20%，且必须有明确动作。
+- 全部图片先展示给用户验收；未验收不得上传或进入公众号草稿。
+- 公众号流程默认只保存草稿，不正式发布。成功必须同时有真实 `appmsgid` / `media_id` 和强制远端回读证据。
+- Chrome 已登录时复用固定登录态，后台执行，不要求用户反复扫码；登录失效、Chrome 控制不可用或结果不确定时停止并报告，不绕过登录。
+- 不把 API key、Cookie、二维码、私有链接或本机绝对路径写入仓库、提示词、回执或记忆。
+
+推荐产物：锁稿副本与 SHA-256、排版 Markdown/HTML、10 张图片及哈希、用户验收记录、草稿发布回执。
