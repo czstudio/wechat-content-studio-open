@@ -87,6 +87,9 @@ H:\tools\wechat-content-studio-open
 - [`profiles/agentalpha-wechat-production/SKILL.md`](./profiles/agentalpha-wechat-production/SKILL.md)
 - [`profiles/agentalpha-wechat-production/README.md`](./profiles/agentalpha-wechat-production/README.md)
 - [`profiles/agentalpha-wechat-production/production-contract.md`](./profiles/agentalpha-wechat-production/production-contract.md)
+- [`profiles/agentalpha-wechat-production/visual-reference-manifest.md`](./profiles/agentalpha-wechat-production/visual-reference-manifest.md)
+- [`profiles/agentalpha-wechat-production/reference-style-standard.md`](./profiles/agentalpha-wechat-production/reference-style-standard.md)
+- [`profiles/agentalpha-wechat-production/character-reference.md`](./profiles/agentalpha-wechat-production/character-reference.md)
 - [`profiles/agentalpha-wechat-production/publish-contract.md`](./profiles/agentalpha-wechat-production/publish-contract.md)
 - [`profiles/agentalpha-wechat-production/templates/cta-templates.md`](./profiles/agentalpha-wechat-production/templates/cta-templates.md)
 

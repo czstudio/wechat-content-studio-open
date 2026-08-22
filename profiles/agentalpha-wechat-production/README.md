@@ -45,6 +45,8 @@
 - `reference-images/03-character-action-reference.png`
 - `reference-images/04-summary-diagram.png`
 
+用户提供的“手绘技术配图 + 原创 Q 版人物”标准见 [`reference-style-standard.md`](./reference-style-standard.md)。外部带水印原图不随公共仓库分发，只登记文件名和 SHA-256。
+
 生图时每次最多使用 1 张构图参考图，确有需要时再附 1 张人物参考图，避免多张参考图串风格。
 
 ## 结尾与课程引流

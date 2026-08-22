@@ -12,9 +12,10 @@ description: AgentAlpha 公众号文章的锁稿、手绘技术配图、用户�
 1. `README.md`
 2. `production-contract.md`
 3. `visual-reference-manifest.md`
-4. `character-reference.md`
-5. `templates/cta-templates.md`
-6. `publish-contract.md`
+4. `reference-style-standard.md`
+5. `character-reference.md`
+6. `templates/cta-templates.md`
+7. `publish-contract.md`
 
 硬规则：
 

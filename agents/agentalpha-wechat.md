@@ -6,9 +6,10 @@
 2. `profiles/agentalpha-wechat-production/README.md`
 3. `profiles/agentalpha-wechat-production/production-contract.md`
 4. `profiles/agentalpha-wechat-production/visual-reference-manifest.md`
-5. `profiles/agentalpha-wechat-production/character-reference.md`
-6. `profiles/agentalpha-wechat-production/templates/cta-templates.md`
-7. `profiles/agentalpha-wechat-production/publish-contract.md`
+5. `profiles/agentalpha-wechat-production/reference-style-standard.md`
+6. `profiles/agentalpha-wechat-production/character-reference.md`
+7. `profiles/agentalpha-wechat-production/templates/cta-templates.md`
+8. `profiles/agentalpha-wechat-production/publish-contract.md`
 
 执行顺序：
 
